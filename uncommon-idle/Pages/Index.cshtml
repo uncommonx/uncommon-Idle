@@ -1,0 +1,37 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["uncommon_idle"] = "uncommon_idle";
+}
+
+<h1>uncommon_idle</h1>
+
+<p id="seedCountDisplay"> You have 0 seeds </p>
+<p id="wheatCountDisplay"> You have 0 wheat </p>
+<p id="copperCountDisplay"> You have 0cp </p>
+<button onclick="plantSeed(1)"> Plant 1 seed </button>
+<button onclick="sellWheat(1)"> Sell 1 wheat (1cp) </button>
+<button onclick="buySeeds(10)"> Buy 10 seeds (5cp) </button>
+<p></p>
+<button onclick="plantSeed(10)"> Plant 10 seeds </button>
+<button onclick="sellWheat(10)"> Sell 10 wheat (1cp) </button>
+<button onclick="buySeeds(100)"> Buy 100 seeds (50cp) </button>
+<hr />
+<p id="farmHandCountDisplay"> You have 0 out of 20 available farm hands </p>
+<p id="merchantCountDisplay"> You have contracted 0 out of 2 available merchants </p>
+<p id="acreCountDisplay"> You have 1 acre of Farm Land </p>
+<button onclick="hireFarmHand(1)"> Hire farm hand (10cp) </button>
+<button onclick="hireMerchant(1)"> Contract a merchant (100cp) </button>
+<button onclick="buyAcre(1)"> Buy 1 acre of Farm Land (1sp) </button>
+<p></p>
+<button onclick="hireFarmHand(100)"> Hire 100 farm hands (1sp) </button>
+<button onclick="hireMerchant(10)"> Contract 10 merchants (1sp) </button>
+<button onclick="buyAcre(10)"> Buy 10 acre of Farm Lands (10sp) </button>
+<p></p>
+<hr />
+<p id="toolCount"> You have 0 tools </p>
+<p id="wagonCount"> You have 0 wagons </p>
+<button onclick="buyTools()"> Buy Tools for Farm Hands (1gp) </button>
+<button onclick="buyWagon()"> Buy a Wagon for Merchants (1gp) </button>
+<hr />
+<div id="saveTimer">Autosaving in 10 seconds...</div>
